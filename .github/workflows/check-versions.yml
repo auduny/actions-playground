@@ -12,4 +12,4 @@ jobs:
         repository: 'nginx'
         branch: 'mainline'
     - name: Print latest version
-      run: echo "Latest version is ${{ steps.lastversion.outputs.last_version }}"
+      run: echo "::notice title=NGINX::Latest version is ${{ steps.lastversion.outputs.last_version }}"
